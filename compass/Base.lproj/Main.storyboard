@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -81,16 +82,16 @@
                                 <exclude reference="WC3-aI-NDv"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="2ZN-VT-A3n"/>
+                                <exclude reference="QMO-8R-6mX"/>
                                 <exclude reference="3sF-Oa-Obo"/>
                                 <exclude reference="H3h-yL-2ia"/>
-                                <exclude reference="6mU-Xo-Biy"/>
                                 <exclude reference="NRo-NB-yZd"/>
                                 <exclude reference="QNk-mb-zJx"/>
                                 <exclude reference="ZOu-zj-xBE"/>
                                 <exclude reference="cCB-uI-x8K"/>
                                 <exclude reference="red-Ph-IAR"/>
-                                <exclude reference="2ZN-VT-A3n"/>
-                                <exclude reference="QMO-8R-6mX"/>
+                                <exclude reference="6mU-Xo-Biy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -100,16 +101,16 @@
                                 <include reference="WC3-aI-NDv"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2ZN-VT-A3n"/>
+                                <include reference="QMO-8R-6mX"/>
                                 <include reference="3sF-Oa-Obo"/>
                                 <include reference="H3h-yL-2ia"/>
-                                <include reference="6mU-Xo-Biy"/>
                                 <include reference="NRo-NB-yZd"/>
                                 <include reference="QNk-mb-zJx"/>
                                 <include reference="ZOu-zj-xBE"/>
                                 <include reference="cCB-uI-x8K"/>
                                 <include reference="red-Ph-IAR"/>
-                                <include reference="2ZN-VT-A3n"/>
-                                <include reference="QMO-8R-6mX"/>
+                                <include reference="6mU-Xo-Biy"/>
                             </mask>
                         </variation>
                     </view>

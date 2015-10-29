@@ -14,8 +14,8 @@
 		72B1271B1BDBA07E006B3AAE /* compass.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72B127191BDBA07E006B3AAE /* compass.xcdatamodeld */; };
 		72B1271D1BDBA07F006B3AAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72B1271C1BDBA07F006B3AAE /* Assets.xcassets */; };
 		72B127201BDBA07F006B3AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B1271E1BDBA07F006B3AAE /* LaunchScreen.storyboard */; };
-		72B127291BDBA922006B3AAE /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127271BDBA922006B3AAE /* compass.png */; settings = {ASSET_TAGS = (); }; };
-		72B1272A1BDBA922006B3AAE /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127281BDBA922006B3AAE /* pointer.png */; settings = {ASSET_TAGS = (); }; };
+		72B127291BDBA922006B3AAE /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127271BDBA922006B3AAE /* compass.png */; };
+		72B1272A1BDBA922006B3AAE /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127281BDBA922006B3AAE /* pointer.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +119,7 @@
 				TargetAttributes = {
 					72B127091BDBA078006B3AAE = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 55ZQ6FM99Y;
 					};
 				};
 			};
@@ -273,10 +274,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = compass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skanderjabouzi.compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -284,10 +288,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = compass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skanderjabouzi.compass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -310,6 +317,7 @@
 				72B127261BDBA07F006B3AAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
