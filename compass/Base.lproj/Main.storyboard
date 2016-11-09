@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,22 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-xk-19m">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-zh-lKk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ph-zh-lKk">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <animations/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="8W6-6J-XDk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -43,80 +42,41 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer.png" translatesAutoresizingMaskIntoConstraints="NO" id="WC3-aI-NDv">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="69" id="0Pt-mw-sVF"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0Pt-mw-sVF"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="0Pt-mw-sVF"/>
-                                    </mask>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass.png" translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-xk-19m">
+                                <rect key="frame" x="37" y="157" width="300" height="300"/>
                             </imageView>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="j7Q-xk-19m" secondAttribute="bottom" constant="138" id="2ZN-VT-A3n"/>
                             <constraint firstItem="2ph-zh-lKk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="7" id="3sF-Oa-Obo"/>
-                            <constraint firstItem="j7Q-xk-19m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-14" id="6mU-Xo-Biy"/>
                             <constraint firstItem="2ph-zh-lKk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="H3h-yL-2ia"/>
-                            <constraint firstItem="WC3-aI-NDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NRo-NB-yZd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WC3-aI-NDv" secondAttribute="bottom" constant="145" id="QMO-8R-6mX"/>
-                            <constraint firstItem="WC3-aI-NDv" firstAttribute="centerX" secondItem="2ph-zh-lKk" secondAttribute="centerX" id="QNk-mb-zJx"/>
-                            <constraint firstItem="WC3-aI-NDv" firstAttribute="centerX" secondItem="j7Q-xk-19m" secondAttribute="centerX" id="ZOu-zj-xBE"/>
-                            <constraint firstItem="WC3-aI-NDv" firstAttribute="top" secondItem="j7Q-xk-19m" secondAttribute="top" id="cCB-uI-x8K"/>
-                            <constraint firstItem="WC3-aI-NDv" firstAttribute="top" secondItem="2ph-zh-lKk" secondAttribute="bottom" constant="35" id="red-Ph-IAR"/>
+                            <constraint firstItem="j7Q-xk-19m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mWp-zH-dxz"/>
+                            <constraint firstItem="j7Q-xk-19m" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="137" id="mb4-hU-Lxg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="j7Q-xk-19m"/>
                                 <exclude reference="2ph-zh-lKk"/>
-                                <exclude reference="WC3-aI-NDv"/>
+                                <exclude reference="j7Q-xk-19m"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2ZN-VT-A3n"/>
-                                <exclude reference="QMO-8R-6mX"/>
                                 <exclude reference="3sF-Oa-Obo"/>
                                 <exclude reference="H3h-yL-2ia"/>
-                                <exclude reference="NRo-NB-yZd"/>
-                                <exclude reference="QNk-mb-zJx"/>
-                                <exclude reference="ZOu-zj-xBE"/>
-                                <exclude reference="cCB-uI-x8K"/>
-                                <exclude reference="red-Ph-IAR"/>
-                                <exclude reference="6mU-Xo-Biy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="j7Q-xk-19m"/>
                                 <include reference="2ph-zh-lKk"/>
-                                <include reference="WC3-aI-NDv"/>
+                                <include reference="j7Q-xk-19m"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2ZN-VT-A3n"/>
-                                <include reference="QMO-8R-6mX"/>
                                 <include reference="3sF-Oa-Obo"/>
                                 <include reference="H3h-yL-2ia"/>
-                                <include reference="NRo-NB-yZd"/>
-                                <include reference="QNk-mb-zJx"/>
-                                <include reference="ZOu-zj-xBE"/>
-                                <include reference="cCB-uI-x8K"/>
-                                <include reference="red-Ph-IAR"/>
-                                <include reference="6mU-Xo-Biy"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="compassImageView" destination="j7Q-xk-19m" id="v2c-HO-AhS"/>
                         <outlet property="compassLabel" destination="2ph-zh-lKk" id="XxT-DC-Nwa"/>
-                        <outlet property="pointerImage" destination="WC3-aI-NDv" id="O5o-1u-PXP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,6 +86,5 @@
     </scenes>
     <resources>
         <image name="compass.png" width="300" height="300"/>
-        <image name="pointer.png" width="45" height="286"/>
     </resources>
 </document>

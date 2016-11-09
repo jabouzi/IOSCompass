@@ -16,6 +16,11 @@
 		72B127201BDBA07F006B3AAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72B1271E1BDBA07F006B3AAE /* LaunchScreen.storyboard */; };
 		72B127291BDBA922006B3AAE /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127271BDBA922006B3AAE /* compass.png */; };
 		72B1272A1BDBA922006B3AAE /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 72B127281BDBA922006B3AAE /* pointer.png */; };
+		D7244AF41DD3D3B300A59113 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7244AF31DD3D3B300A59113 /* CoreLocation.framework */; };
+		D7244AF61DD3D3BB00A59113 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7244AF51DD3D3BB00A59113 /* QuartzCore.framework */; };
+		D7244AF81DD3D3C400A59113 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7244AF71DD3D3C400A59113 /* CoreGraphics.framework */; };
+		D7244AFA1DD3D3CD00A59113 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7244AF91DD3D3CC00A59113 /* Foundation.framework */; };
+		D7244AFC1DD3D3D600A59113 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7244AFB1DD3D3D600A59113 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		72B127211BDBA07F006B3AAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72B127271BDBA922006B3AAE /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
 		72B127281BDBA922006B3AAE /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
+		D7244AF31DD3D3B300A59113 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D7244AF51DD3D3BB00A59113 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D7244AF71DD3D3C400A59113 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D7244AF91DD3D3CC00A59113 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D7244AFB1DD3D3D600A59113 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7244AFC1DD3D3D600A59113 /* UIKit.framework in Frameworks */,
+				D7244AFA1DD3D3CD00A59113 /* Foundation.framework in Frameworks */,
+				D7244AF81DD3D3C400A59113 /* CoreGraphics.framework in Frameworks */,
+				D7244AF61DD3D3BB00A59113 /* QuartzCore.framework in Frameworks */,
+				D7244AF41DD3D3B300A59113 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +65,7 @@
 			children = (
 				72B1270C1BDBA07C006B3AAE /* compass */,
 				72B1270B1BDBA078006B3AAE /* Products */,
+				D7244AF21DD3D3B300A59113 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +104,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D7244AF21DD3D3B300A59113 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7244AFB1DD3D3D600A59113 /* UIKit.framework */,
+				D7244AF91DD3D3CC00A59113 /* Foundation.framework */,
+				D7244AF71DD3D3C400A59113 /* CoreGraphics.framework */,
+				D7244AF51DD3D3BB00A59113 /* QuartzCore.framework */,
+				D7244AF31DD3D3B300A59113 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,7 +147,7 @@
 				TargetAttributes = {
 					72B127091BDBA078006B3AAE = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 55ZQ6FM99Y;
+						DevelopmentTeam = 449ZVE3U99;
 					};
 				};
 			};
@@ -276,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 449ZVE3U99;
 				INFOPLIST_FILE = compass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skanderjabouzi.compass;
@@ -290,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 449ZVE3U99;
 				INFOPLIST_FILE = compass/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skanderjabouzi.compass;
